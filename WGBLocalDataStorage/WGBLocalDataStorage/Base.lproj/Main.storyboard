@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7JY-ix-f7u">
+                                <rect key="frame" x="20" y="542" width="374" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="JgG-Jb-0Fa"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbi-aQ-rdN">
+                                <rect key="frame" x="100" y="94" width="214" height="44"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3Vi-ZB-EFB"/>
+                                </constraints>
+                                <state key="normal" title="保存数据"/>
+                                <connections>
+                                    <action selector="saveDataAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bL-9i-z4B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkI-sW-mmW">
+                                <rect key="frame" x="100" y="158" width="214" height="44"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="更新数据"/>
+                                <connections>
+                                    <action selector="updateDataAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3if-fm-UXw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-qo-ke3">
+                                <rect key="frame" x="100" y="222" width="214" height="44"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteDataAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hL-A2-dhD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dG-W0-G25">
+                                <rect key="frame" x="100" y="286" width="214" height="44"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="显示数据"/>
+                                <connections>
+                                    <action selector="displayDataAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URy-so-8Zs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZkI-sW-mmW" firstAttribute="width" secondItem="rbi-aQ-rdN" secondAttribute="width" id="09P-WU-uJI"/>
+                            <constraint firstItem="1dG-W0-G25" firstAttribute="top" secondItem="uTc-qo-ke3" secondAttribute="bottom" constant="20" id="3gD-BX-imM"/>
+                            <constraint firstItem="ZkI-sW-mmW" firstAttribute="height" secondItem="rbi-aQ-rdN" secondAttribute="height" id="3jT-J0-eGt"/>
+                            <constraint firstItem="uTc-qo-ke3" firstAttribute="height" secondItem="ZkI-sW-mmW" secondAttribute="height" id="46k-de-blc"/>
+                            <constraint firstItem="ZkI-sW-mmW" firstAttribute="centerX" secondItem="rbi-aQ-rdN" secondAttribute="centerX" id="4eB-eX-fct"/>
+                            <constraint firstItem="1dG-W0-G25" firstAttribute="centerX" secondItem="uTc-qo-ke3" secondAttribute="centerX" id="8UM-iN-TeO"/>
+                            <constraint firstItem="rbi-aQ-rdN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="DfM-JP-Wil"/>
+                            <constraint firstItem="rbi-aQ-rdN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="H21-Zu-fr8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7JY-ix-f7u" secondAttribute="bottom" constant="20" id="OT0-dv-el8"/>
+                            <constraint firstItem="uTc-qo-ke3" firstAttribute="width" secondItem="ZkI-sW-mmW" secondAttribute="width" id="UZm-3D-RZd"/>
+                            <constraint firstItem="ZkI-sW-mmW" firstAttribute="top" secondItem="rbi-aQ-rdN" secondAttribute="bottom" constant="20" id="W6M-w0-KHE"/>
+                            <constraint firstItem="1dG-W0-G25" firstAttribute="height" secondItem="uTc-qo-ke3" secondAttribute="height" id="WZl-Ca-phY"/>
+                            <constraint firstItem="1dG-W0-G25" firstAttribute="width" secondItem="uTc-qo-ke3" secondAttribute="width" id="jCv-gQ-uOQ"/>
+                            <constraint firstItem="7JY-ix-f7u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kYK-mY-vDn"/>
+                            <constraint firstItem="uTc-qo-ke3" firstAttribute="centerX" secondItem="ZkI-sW-mmW" secondAttribute="centerX" id="niH-3e-J8D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rbi-aQ-rdN" secondAttribute="trailing" constant="100" id="sc8-Yb-1ME"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7JY-ix-f7u" secondAttribute="trailing" constant="20" id="t8l-vH-geQ"/>
+                            <constraint firstItem="uTc-qo-ke3" firstAttribute="top" secondItem="ZkI-sW-mmW" secondAttribute="bottom" constant="20" id="ycj-EO-7um"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="logScreenTextView" destination="7JY-ix-f7u" id="rHH-2V-WNd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
